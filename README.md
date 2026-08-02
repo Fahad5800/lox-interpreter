@@ -8,7 +8,7 @@ This repository contains my implementation of the **jlox** interpreter from the 
 - [x] Chapter 5: Representing Code
 - [x] Chapter 6: Parsing Expressions
 - [x] Chapter 7: Evaluating Expression
-- [ ] Chapter 8: Statements and State
+- [x] Chapter 8: Statements and State
 - [ ] Chapter 9: Control Flow
 - [ ] Chapter 10: Functions
 - [ ] Chapter 11: Resolving and Building

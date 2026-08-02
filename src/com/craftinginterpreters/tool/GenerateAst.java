@@ -8,17 +8,27 @@ import java.util.List;
 
 public class GenerateAst {
     public static void main(String[] args) throws IOException {
-        if (args.length != 1){            System.err.println("Usage: generate_ast <output directory>");
+        if (args.length != 1){
+            System.err.println("Usage: generate_ast <output directory>");
             System.exit(64);
         }
         String outputDir = args[0];
         defineAst(outputDir, "Expr", Arrays.asList(
               //"class name : fields     (Type name, ...)
+                "Assign   : Token name, Expr value",
                 "Binary   : Expr left, Token operator, Expr right",
                 "Grouping : Expr expression",
                 "Literal  : Object value",
-                "Unary    : Token operator, Expr right"
-                ));
+                "Unary    : Token operator, Expr right",
+                "Variable : Token name"
+        ));
+
+        defineAst(outputDir, "Stmt", Arrays.asList(
+                "Block      : List<Stmt> statements",
+                "Expression : Expr expression",
+                "Print      : Expr expression",
+                "Var        : Token name, Expr initializer"
+        ));
     }
 
     private static void defineAst(String outputDir, String baseName, List<String> types) throws IOException {
