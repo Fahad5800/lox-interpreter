@@ -7,11 +7,11 @@ import java.util.Map;
 import static com.craftinginterpreters.lox.TokenType.*;
 
 public class Scanner {
-    private final String source;
-    private final List<Token> tokens = new ArrayList<>();
-    private int start = 0;
-    private int current = 0;
-    private int line = 1;
+    private final String source;   // Takes the full source file
+    private final List<Token> tokens = new ArrayList<>();   // Stores each token
+    private int start = 0;  //current starting token
+    private int current = 0;    // currently scanned character
+    private int line = 1;       // for error
     private static final Map<String, TokenType> keywords;
 
     static {
@@ -40,8 +40,7 @@ public class Scanner {
 
     List<Token> scanTokens() {
         while (!isAtEnd()) {
-            // We are at the beginning of the next lexeme.
-            start = current;
+            start = current;    // sets before each token
             scanToken();
         }
 
