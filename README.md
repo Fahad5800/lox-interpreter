@@ -11,6 +11,6 @@ This repository contains my implementation of the **jlox** interpreter from the 
 - [x] Chapter 8: Statements and State
 - [x] Chapter 9: Control Flow
 - [x] Chapter 10: Functions
-- [ ] Chapter 11: Resolving and Building
+- [x] Chapter 11: Resolving and Building
 - [ ] Chapter 12: Classes
 - [ ] Chapter 13: Inheritance
