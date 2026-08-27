@@ -28,12 +28,6 @@ Interpreter
 Program Output
 ```
 
-For a detailed explanation of the interpreter architecture and how these components work together, see:
-
-### 📖 [jLox Technical Guide](docs/JLOX_GUIDE.md)
-
-The technical guide covers the scanner, parser, AST, Visitor pattern, interpreter, environments, closures, classes, inheritance, resolver, design decisions, and a complete source-to-execution walkthrough.
-
 ## Features
 
 The interpreter supports:
@@ -147,12 +141,11 @@ More importantly, the project gave me a much clearer mental model of what happen
 
 ## Documentation
 
-For a deeper technical walkthrough of the implementation, including important design decisions:
-
+For a deeper technical walkthrough of the implementation, please refer to the following document:
 **[jLox Technical Guide →](docs/JLOX_GUIDE.md)**
 
 ## Acknowledgments
 
-This project follows the **jLox interpreter presented in Robert Nystrom's [*Crafting Interpreters*](https://craftinginterpreters.com/)**.
+This project follows the **jLox interpreter presented** in Robert Nystrom's [*Crafting Interpreters*](https://craftinginterpreters.com/).
 
 The Lox language, interpreter architecture, and implementation are based on the material from the book. This repository is an educational implementation documenting my work through the jLox portion of *Crafting Interpreters*.
